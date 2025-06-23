@@ -11,7 +11,7 @@
 
 一个简单、轻量的 Windows `netsh` 端口转发规则可视化管理工具。通过直观的图形界面，轻松添加、查看和删除端口转发规则，无需记忆和手动输入繁琐的命令行。
 
-![App Screenshot](https://user-images.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/assets/placeholder.png)
+![App Screenshot](https://user-images.githubusercontent.com/xiaw1024/NetshManager/assets/NetshManager.png)
 *(注意: 请将上面的截图 URL 替换为您自己的项目截图)*
 
 ---
@@ -34,7 +34,7 @@
 
 ## 🚀 如何使用 (最终用户)
 
-1. 前往本项目的 [GitHub Releases](https://github.com/YOUR_USERNAME/YOUR_REPO/releases) 页面。
+1. 前往本项目的 [GitHub Releases](https://github.com/xiaw1024/NetshManager/releases) 页面。
 2. 下载最新版本的 `netsh-manager.exe` 文件。
 3. **直接双击运行 `netsh-manager.exe`**。
 4. 程序会自动请求管理员权限（请允许），然后启动服务并打开您的默认浏览器，显示管理界面。
@@ -51,8 +51,8 @@
 1. 克隆仓库:
 
     ```bash
-    git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
-    cd YOUR_REPO
+    git clone https://github.com/xiaw1024/NetshManager.git
+    cd NetshManager
     ```
 
 2. 安装所有工作区的依赖:
@@ -143,4 +143,4 @@
 
 ---
 
-*请将所有 `YOUR_USERNAME/YOUR_REPO` 替换为您自己的 GitHub 用户名和仓库名。*
+*请将所有 `xiaw1024/NetshManager` 替换为您自己的 GitHub 用户名和仓库名。*

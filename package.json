@@ -12,7 +12,7 @@
         "dev": "cd frontend && pnpm run dev",
         "build": "cd frontend && pnpm run build",
         "server": "cd backend && pnpm run start",
-        "build:exe": "pnpm run build && pkg ."
+        "build:exe": "pnpm run build && pkg . --output release/netsh-manager.exe"
     },
     "devDependencies": {
         "@yao-pkg/pkg": "^6.5.1"

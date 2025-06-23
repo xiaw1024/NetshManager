@@ -1,7 +1,7 @@
 <!--
  * @Author: xiawang1024
  * @Date: 2025-06-23 14:04:08
- * @LastEditTime: 2025-06-23 14:28:44
+ * @LastEditTime: 2025-06-23 14:42:47
  * @LastEditors: xiawang1024
  * @Description: 
  * @FilePath: \NetshManager\README.md
@@ -100,7 +100,7 @@
     pnpm run build:exe
     ```
 
-    这个命令会首先执行前端构建，然后使用 `pkg` 将后端服务和前端产物一起打包成一个独立的 `.exe` 文件。最终的可执行文件会存放在 `./netsh-manager-workspace.exe`。
+    这个命令会首先执行前端构建，然后使用 `pkg` 将后端服务和前端产物一起打包成一个独立的 `.exe` 文件。最终的可执行文件会存放在 `release/netsh-manager.exe`。
 
 ---
 

@@ -1,0 +1,30 @@
+# Dependencies
+/node_modules
+/frontend/node_modules
+/backend/node_modules
+
+# Build artifacts
+/frontend/dist
+/release
+
+# Logs
+*.log
+crash.log*
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# IDEs and editors
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Operating System files
+.DS_Store
+Thumbs.db

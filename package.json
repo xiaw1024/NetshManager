@@ -1,0 +1,28 @@
+{
+    "name": "netsh-manager-workspace",
+    "private": true,
+    "version": "1.0.0",
+    "bin": "backend/server.js",
+    "workspaces": [
+        "frontend",
+        "backend"
+    ],
+    "scripts": {
+        "install:all": "pnpm install -r",
+        "dev": "cd frontend && pnpm run dev",
+        "build": "cd frontend && pnpm run build",
+        "server": "cd backend && pnpm run start",
+        "build:exe": "pnpm run build && pkg ."
+    },
+    "devDependencies": {
+        "@yao-pkg/pkg": "^6.5.1"
+    },
+    "pkg": {
+        "assets": [
+            "frontend/dist/**/*"
+        ],
+        "targets": [
+            "node18-win-x64"
+        ]
+    }
+}

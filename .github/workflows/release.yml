@@ -1,0 +1,43 @@
+name: Build and Release EXE
+
+on:
+  push:
+    tags:
+      - 'v*' # Trigger the workflow on version tags like v1.0.0
+
+jobs:
+  build-and-release:
+    runs-on: windows-latest
+    permissions:
+      contents: write # Required to create a release
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 8 # Or your desired pnpm version
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build the executable
+        run: pnpm run build:exe
+
+      - name: Create Release and Upload Asset
+        uses: softprops/action-gh-release@v2
+        with:
+          files: release/netsh-manager.exe
+          body: |
+            Automated release based on tag ${{ github.ref_name }}.
+            See the attached `netsh-manager.exe` for the latest build.
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

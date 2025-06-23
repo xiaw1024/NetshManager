@@ -1,7 +1,7 @@
 <!--
  * @Author: xiawang1024
  * @Date: 2025-06-23 14:04:08
- * @LastEditTime: 2025-06-23 14:44:59
+ * @LastEditTime: 2025-06-23 15:19:49
  * @LastEditors: xiawang1024
  * @Description: 
  * @FilePath: \NetshManager\README.md
@@ -11,8 +11,7 @@
 
 一个简单、轻量的 Windows `netsh` 端口转发规则可视化管理工具。通过直观的图形界面，轻松添加、查看和删除端口转发规则，无需记忆和手动输入繁琐的命令行。
 
-![App Screenshot](https://user-images.githubusercontent.com/xiaw1024/NetshManager/assets/NetshManager.png)
-*(注意: 请将上面的截图 URL 替换为您自己的项目截图)*
+![image](https://github.com/xiaw1024/NetshManager/blob/develop/assets/NetshManager.png?raw=true)
 
 ---
 
@@ -140,7 +139,3 @@
 3. 点击 **"Run workflow"** 下拉按钮。
 4. 选择您要运行的分支 (通常是 `main`)，然后点击绿色的 **"Run workflow"** 按钮。
 5. **查看结果**: 工作流运行结束后，会创建一个标记为 "Pre-release" 的草稿版本。您可以在 "Releases" 页面找到它并下载 `.exe` 文件进行测试。
-
----
-
-*请将所有 `xiaw1024/NetshManager` 替换为您自己的 GitHub 用户名和仓库名。*
